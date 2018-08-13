@@ -5,10 +5,10 @@
 #include "control.h"
 #include "Bike_Speed.h"
 
-#define speed_wait_time 5//²âËÙ×îĞ¡¼ä¸ô
-unsigned long speed_time[4];//²âËÙÊ±¼äÊı¾İ×é
-unsigned long speed_last_time = 0;//ÉÏÒ»´Î²âËÙÊ±¼ä
-int speed_num = 0;//µ±Ç°Ê±¼äÊı¾İÔÚÊı×éÖĞµÄÎ»ÖÃ
+#define speed_wait_time 5//æµ‹é€Ÿæœ€å°é—´éš”
+unsigned long speed_time[4];//æµ‹é€Ÿæ—¶é—´æ•°æ®ç»„
+unsigned long speed_last_time = 0;//ä¸Šä¸€æ¬¡æµ‹é€Ÿæ—¶é—´
+int speed_num = 0;//å½“å‰æ—¶é—´æ•°æ®åœ¨æ•°ç»„ä¸­çš„ä½ç½®
 
 void Speed_init() {
 	pinMode(Speed_pin, INPUT);
